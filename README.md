@@ -31,7 +31,8 @@ Push Fit is an app that provides a simple and clean interface to build your work
 
 **Required Must-have Stories**
 
-* User can add/delete workout to the list
+* User can see a list of all available exercises 
+* User can add/delete exercise to the list
 * User can save their routine
 * User can tap on cell to get a description on a excerise
 
