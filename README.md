@@ -88,13 +88,13 @@ Push Fit is an app that provides a simple and clean interface to build your work
 
    | Property      | Type     | Description |
    | ------------- | -------- | ------------|
-   | objectId      | String   | unique id for the user post (default field) |
-   | author        | Pointer to User| image author |
-   | image         | File     | image that user posts |
-   | caption       | String   | image caption by author |
-   | commentsCount | Number   | number of comments that has been posted to an image |
-   | likesCount    | Number   | number of likes for the post |
-   | createdAt     | DateTime | date when post is created (default field) |
+   | ExcerciseName  | String   | unique id for the user post (default field) |
+   | Description     | String| image author |
+   | BodyPart    | String     | image that user posts |
+   | TargetMuscle       | String   | image caption by author |
+   | RepCount      | Number   | number of comments that has been posted to an image |
+   | SetCount    | Number   | number of likes for the post |
+   | ExerciseVisual     | File | date when post is created (default field) |
    | updatedAt     | DateTime | date when post is last updated (default field) |
 ### Networking
 #### List of network requests by screen
