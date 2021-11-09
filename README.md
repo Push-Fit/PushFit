@@ -128,7 +128,6 @@ Push Fit is an app that provides a simple and clean interface to build your work
   - Description Screen
        - (Read/Get) Query exercise name
        - (Read/Get) Query exercise visual
-       - (Read/Get) Query exercise video
        - (Read/Get) Query exercise summary
    
    - Creation Screen
