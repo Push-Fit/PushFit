@@ -90,16 +90,19 @@ Push Fit is an app that provides a simple and clean interface to build your work
    | ------------- | -------- | ------------|
    | ExcerciseName  | String   | name of the excersise |
    | WorkoutName  | String  | name of the workout |
-   | Description     | String| image author |
-   | BodyPart    | String     | image that user posts |
-   | TargetMuscle       | String   | image caption by author |
-   | RepCount      | Number   | number of comments that has been posted to an image |
-   | SetCount    | Number   | number of likes for the post |
-   | ExerciseVisual     | File | date when post is created (default field) |
+   | Description     | String| description of excersise |
+   | BodyPart    | String     | name of body part |
+   | TargetMuscle       | String   | name of muscle group |
+   | RepCount      | Number   | number of reps |
+   | SetCount    | Number   | number of sets |
+   | ExerciseVisual     | File | display visual of excercise |
 ### Networking
 #### List of network requests by screen
    - Home Feed Screen
-      - (Read/GET) Query all posts where user is author
+      - (Read/GET) Query excersises
+      - (Read/Get) Query excersise name
+      - (Read/Get) Query excersise visual
+
          ```swift
          let query = PFQuery(className:"Post")
          query.whereKey("author", equalTo: currentUser)
@@ -113,15 +116,22 @@ Push Fit is an app that provides a simple and clean interface to build your work
             }
          }
          ```
-      - (Create/POST) Create a new like on a post
-      - (Delete) Delete existing like
-      - (Create/POST) Create a new comment on a post
-      - (Delete) Delete existing comment
-   - Create Post Screen
-      - (Create/POST) Create a new post object
-   - Profile Screen
-      - (Read/GET) Query logged in user object
-      - (Update/PUT) Update user profile image
+      - (Delete) Delete workout 
+      - (Delete) Delete workout excercise
+      - (Create/POST) saving workout
+   - Saved Workout Screen
+       - (Read/GET) Query Workout name
+       - (Read/Get) Query workout visual
+       - (Delete) Delete workout
+   
+   
+   - Creation Screen
+       - (Create/Post) Make workout
+
+
+    
+
+   
 #### [OPTIONAL:] Existing API Endpoints
 ##### An API Of Ice And Fire
 - Base URL - [http://www.anapioficeandfire.com/api](http://www.anapioficeandfire.com/api)
