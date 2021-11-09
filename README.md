@@ -117,20 +117,27 @@ Push Fit is an app that provides a simple and clean interface to build your work
          }
          ```
       - (Delete) Delete workout 
-      - (Delete) Delete workout excercise
+      - (Delete) Delete excercise
       - (Create/POST) saving workout
+   
    - Saved Workout Screen
-       - (Read/GET) Query Workout name
+       - (Read/Get) Query Workout name
        - (Read/Get) Query workout visual
        - (Delete) Delete workout
-   
+
+  - Description Screen
+       - (Read/Get) Query exercise name
+       - (Read/Get) Query exercise visual
+       - (Read/Get) Query exercise video
+       - (Read/Get) Query exercise summary
    
    - Creation Screen
        - (Create/Post) Make workout
+       - (Read/Get) Query Workout name
+       - (Read/Get) Query workout visual
 
 
     
-
    
 #### [OPTIONAL:] Existing API Endpoints
 ##### An API Of Ice And Fire
