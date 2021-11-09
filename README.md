@@ -121,3 +121,14 @@ Push Fit is an app that provides a simple and clean interface to build your work
        - (Read/Get) Query Workout name
        - (Read/Get) Query workout visual
 
+### [Optional:] Existing API Endpoints
+
+- Base URL - [https://exercisedb.p.rapidapi.com/exercises](https://exercisedb.p.rapidapi.com/exercises)
+
+| HTTP      | Endpoint     | Description |
+   | ------------- | -------- | ------------|
+   | `GET`  |  Base  | get all exercises |
+   | `GET`  | /bodyPart  | get exercises by body part |
+   | `GET`  | /name| get exercises by name |
+   | `GET`  | /target     | get exercise by primary muscle |
+   | `GET`      | /equipment   | get exercise by type of equipment |
