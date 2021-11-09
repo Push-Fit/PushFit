@@ -123,6 +123,7 @@ Push Fit is an app that provides a simple and clean interface to build your work
 
 ### [Optional:] Existing API Endpoints
 
+##### ExerciseDB API
 - Base URL - [https://exercisedb.p.rapidapi.com/exercises](https://exercisedb.p.rapidapi.com/exercises)
 
 | HTTP      | Endpoint     | Description |
