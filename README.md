@@ -136,3 +136,18 @@ Push Fit is an app that provides a simple and clean interface to build your work
    | `GET`  | /name| get exercises by name |
    | `GET`  | /target     | get exercise by primary muscle |
    | `GET`      | /equipment   | get exercise by type of equipment |
+   
+## Sprints
+
+### Sprint 1
+
+#### API Selection
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/89464542/141871461-8b9bb264-b45c-436a-a245-c6d7cdba9e8a.gif)
+
+### Sprint 2
+
+#### Flow Navigation/Layout
+
+<img src= https://i.imgur.com/E5rZ1tl.gif width=800>
+
+<img src= https://i.imgur.com/ELlJwrC.gif width=600>
