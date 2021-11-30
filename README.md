@@ -157,7 +157,7 @@ Push Fit is an app that provides a simple and clean interface to build your work
 ### Parse Login/Login Persistence (Core Data Implementation Replaced)
 
 <img src= https://i.imgur.com/AQlMgR1.gif width=600>
-<img src= https://i.imgur.com/w57Dqms.gif>
+![ezgif com-gif-maker (3)](https://user-images.githubusercontent.com/89464542/143982258-de6b2969-a033-4022-8552-0f64ee89f03c.gif)
 
 ### Populating ExercisePicker TableView W/ API Call
 <img src= https://i.imgur.com/fwdGeYU.gif width=600>
