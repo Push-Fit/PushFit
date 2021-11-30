@@ -151,3 +151,11 @@ Push Fit is an app that provides a simple and clean interface to build your work
 <img src= https://i.imgur.com/E5rZ1tl.gif width=800>
 
 <img src= https://i.imgur.com/ELlJwrC.gif width=600>
+
+### Sprint 3
+
+### Parse Login/Login Persistence (Core Data Implementation Replaced)
+
+<img src= https://i.imgur.com/AQlMgR1.gif width=600>
+<img src= https://i.imgur.com/i3KWkmv.gif width=600>
+<img src= https://i.imgur.com/fwdGeYU.gif width=600>
