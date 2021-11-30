@@ -9,6 +9,9 @@ import UIKit
 
 class HomeController: UITableViewController {
 
+   /* let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var workouts : [Workouts]?*/
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -17,7 +20,24 @@ class HomeController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        //get items from CoreData
+        //fetchPeople()
     }
+    
+    /*func fetchPeople(){
+        
+        //fetch data from CoreData
+        do{
+            self.workouts = try context.fetch(Workouts.fetchRequest())
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+            }
+            
+            
+        } catch{}
+        
+    }*/
 
     // MARK: - Table view data source
 

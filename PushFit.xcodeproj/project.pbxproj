@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BDA5F81672CE7B8378E15F0 /* Pods_PushFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1FDF9F4F371FE271C2691A6 /* Pods_PushFit.framework */; };
+		59E460033ACD667CCF7C32D8 /* Pods_PushFit_PushFitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 528D6E694583D33A763B6118 /* Pods_PushFit_PushFitUITests.framework */; };
+		B1069C9727555E770095C6E1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1069C9627555E770095C6E1 /* LoginViewController.swift */; };
+		B1069C99275587060095C6E1 /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1069C98275587060095C6E1 /* ExerciseCell.swift */; };
 		B10B794A2746FE020031C980 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10B79492746FE020031C980 /* HomeController.swift */; };
-		B10B794D274715DE0031C980 /* Workouts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B10B794B274715DE0031C980 /* Workouts.xcdatamodeld */; };
 		B1455EA1274C83C100281FD5 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1455EA0274C83C100281FD5 /* DetailsViewController.swift */; };
 		B1455EA3274C83EE00281FD5 /* SaveWorkoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1455EA2274C83EE00281FD5 /* SaveWorkoutController.swift */; };
 		B1455EA5274C890700281FD5 /* AddExerciseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1455EA4274C890700281FD5 /* AddExerciseController.swift */; };
@@ -21,6 +24,7 @@
 		B1ABB3C62739A52B0050E049 /* PushFitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ABB3C52739A52B0050E049 /* PushFitTests.swift */; };
 		B1ABB3D02739A52B0050E049 /* PushFitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ABB3CF2739A52B0050E049 /* PushFitUITests.swift */; };
 		B1ABB3D22739A52B0050E049 /* PushFitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1ABB3D12739A52B0050E049 /* PushFitUITestsLaunchTests.swift */; };
+		E616FCAE6E5C36957716DACA /* Pods_PushFitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1C4432126F5B57DC36409E3 /* Pods_PushFitTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +45,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1154F461D4D978EE4F63E464 /* Pods-PushFit-PushFitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushFit-PushFitUITests.debug.xcconfig"; path = "Target Support Files/Pods-PushFit-PushFitUITests/Pods-PushFit-PushFitUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1BBC29343C0709C5C4B7D5D0 /* Pods-PushFit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushFit.release.xcconfig"; path = "Target Support Files/Pods-PushFit/Pods-PushFit.release.xcconfig"; sourceTree = "<group>"; };
+		528D6E694583D33A763B6118 /* Pods_PushFit_PushFitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushFit_PushFitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B8EE5B5056AC1D54D707BDE /* Pods-PushFitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushFitTests.release.xcconfig"; path = "Target Support Files/Pods-PushFitTests/Pods-PushFitTests.release.xcconfig"; sourceTree = "<group>"; };
+		6C2DEBD5498238EAD4254446 /* Pods-PushFitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushFitTests.debug.xcconfig"; path = "Target Support Files/Pods-PushFitTests/Pods-PushFitTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9B89F5C1C2C7C6C076264FC1 /* Pods-PushFit-PushFitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushFit-PushFitUITests.release.xcconfig"; path = "Target Support Files/Pods-PushFit-PushFitUITests/Pods-PushFit-PushFitUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A1C4432126F5B57DC36409E3 /* Pods_PushFitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushFitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1069C9627555E770095C6E1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B1069C98275587060095C6E1 /* ExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
 		B10B79492746FE020031C980 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
-		B10B794C274715DE0031C980 /* Workouts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Workouts.xcdatamodel; sourceTree = "<group>"; };
 		B1455EA0274C83C100281FD5 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		B1455EA2274C83EE00281FD5 /* SaveWorkoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveWorkoutController.swift; sourceTree = "<group>"; };
 		B1455EA4274C890700281FD5 /* AddExerciseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseController.swift; sourceTree = "<group>"; };
@@ -59,6 +71,8 @@
 		B1ABB3CB2739A52B0050E049 /* PushFitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PushFitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1ABB3CF2739A52B0050E049 /* PushFitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushFitUITests.swift; sourceTree = "<group>"; };
 		B1ABB3D12739A52B0050E049 /* PushFitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushFitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C1EA96775EFD7C28250C5961 /* Pods-PushFit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushFit.debug.xcconfig"; path = "Target Support Files/Pods-PushFit/Pods-PushFit.debug.xcconfig"; sourceTree = "<group>"; };
+		E1FDF9F4F371FE271C2691A6 /* Pods_PushFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BDA5F81672CE7B8378E15F0 /* Pods_PushFit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E616FCAE6E5C36957716DACA /* Pods_PushFitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +96,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59E460033ACD667CCF7C32D8 /* Pods_PushFit_PushFitUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1EB92D876288DC1ECAA986C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1FDF9F4F371FE271C2691A6 /* Pods_PushFit.framework */,
+				528D6E694583D33A763B6118 /* Pods_PushFit_PushFitUITests.framework */,
+				A1C4432126F5B57DC36409E3 /* Pods_PushFitTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B1ABB3A22739A52A0050E049 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +120,8 @@
 				B1ABB3C42739A52B0050E049 /* PushFitTests */,
 				B1ABB3CE2739A52B0050E049 /* PushFitUITests */,
 				B1ABB3AC2739A52A0050E049 /* Products */,
+				F41C0958A84DE3B2B797F0B3 /* Pods */,
+				1EB92D876288DC1ECAA986C4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,11 +145,12 @@
 				B1ABB3B72739A52B0050E049 /* Assets.xcassets */,
 				B1ABB3B92739A52B0050E049 /* LaunchScreen.storyboard */,
 				B1ABB3BC2739A52B0050E049 /* Info.plist */,
-				B10B794B274715DE0031C980 /* Workouts.xcdatamodeld */,
 				B1455EA0274C83C100281FD5 /* DetailsViewController.swift */,
 				B1455EA2274C83EE00281FD5 /* SaveWorkoutController.swift */,
 				B1455EA4274C890700281FD5 /* AddExerciseController.swift */,
 				B1455EA6274C8D5B00281FD5 /* PickExerciseController.swift */,
+				B1069C9627555E770095C6E1 /* LoginViewController.swift */,
+				B1069C98275587060095C6E1 /* ExerciseCell.swift */,
 			);
 			path = PushFit;
 			sourceTree = "<group>";
@@ -142,6 +172,19 @@
 			path = PushFitUITests;
 			sourceTree = "<group>";
 		};
+		F41C0958A84DE3B2B797F0B3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C1EA96775EFD7C28250C5961 /* Pods-PushFit.debug.xcconfig */,
+				1BBC29343C0709C5C4B7D5D0 /* Pods-PushFit.release.xcconfig */,
+				1154F461D4D978EE4F63E464 /* Pods-PushFit-PushFitUITests.debug.xcconfig */,
+				9B89F5C1C2C7C6C076264FC1 /* Pods-PushFit-PushFitUITests.release.xcconfig */,
+				6C2DEBD5498238EAD4254446 /* Pods-PushFitTests.debug.xcconfig */,
+				5B8EE5B5056AC1D54D707BDE /* Pods-PushFitTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -149,9 +192,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1ABB3D52739A52B0050E049 /* Build configuration list for PBXNativeTarget "PushFit" */;
 			buildPhases = (
+				8E70063785A222A9C51514F0 /* [CP] Check Pods Manifest.lock */,
 				B1ABB3A72739A52A0050E049 /* Sources */,
 				B1ABB3A82739A52A0050E049 /* Frameworks */,
 				B1ABB3A92739A52A0050E049 /* Resources */,
+				87330ED52370489531DCB521 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -166,6 +211,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1ABB3D82739A52B0050E049 /* Build configuration list for PBXNativeTarget "PushFitTests" */;
 			buildPhases = (
+				8619B5E4842D7AA7819ABA87 /* [CP] Check Pods Manifest.lock */,
 				B1ABB3BD2739A52B0050E049 /* Sources */,
 				B1ABB3BE2739A52B0050E049 /* Frameworks */,
 				B1ABB3BF2739A52B0050E049 /* Resources */,
@@ -184,9 +230,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B1ABB3DB2739A52B0050E049 /* Build configuration list for PBXNativeTarget "PushFitUITests" */;
 			buildPhases = (
+				4450481A2984D17F21998112 /* [CP] Check Pods Manifest.lock */,
 				B1ABB3C72739A52B0050E049 /* Sources */,
 				B1ABB3C82739A52B0050E049 /* Frameworks */,
 				B1ABB3C92739A52B0050E049 /* Resources */,
+				CF5FCE12762ADEFCF09C967D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -268,6 +316,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4450481A2984D17F21998112 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PushFit-PushFitUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8619B5E4842D7AA7819ABA87 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PushFitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87330ED52370489531DCB521 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PushFit/Pods-PushFit-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PushFit/Pods-PushFit-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PushFit/Pods-PushFit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E70063785A222A9C51514F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PushFit-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF5FCE12762ADEFCF09C967D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PushFit-PushFitUITests/Pods-PushFit-PushFitUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PushFit-PushFitUITests/Pods-PushFit-PushFitUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PushFit-PushFitUITests/Pods-PushFit-PushFitUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B1ABB3A72739A52A0050E049 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -275,12 +426,13 @@
 			files = (
 				B1455EA3274C83EE00281FD5 /* SaveWorkoutController.swift in Sources */,
 				B1455EA5274C890700281FD5 /* AddExerciseController.swift in Sources */,
+				B1069C99275587060095C6E1 /* ExerciseCell.swift in Sources */,
 				B1455EA7274C8D5B00281FD5 /* PickExerciseController.swift in Sources */,
 				B1ABB3AF2739A52A0050E049 /* AppDelegate.swift in Sources */,
 				B1ABB3B12739A52A0050E049 /* SceneDelegate.swift in Sources */,
 				B10B794A2746FE020031C980 /* HomeController.swift in Sources */,
-				B10B794D274715DE0031C980 /* Workouts.xcdatamodeld in Sources */,
 				B1455EA1274C83C100281FD5 /* DetailsViewController.swift in Sources */,
+				B1069C9727555E770095C6E1 /* LoginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +606,7 @@
 		};
 		B1ABB3D62739A52B0050E049 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1EA96775EFD7C28250C5961 /* Pods-PushFit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -481,6 +634,7 @@
 		};
 		B1ABB3D72739A52B0050E049 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BBC29343C0709C5C4B7D5D0 /* Pods-PushFit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -508,6 +662,7 @@
 		};
 		B1ABB3D92739A52B0050E049 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C2DEBD5498238EAD4254446 /* Pods-PushFitTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -532,6 +687,7 @@
 		};
 		B1ABB3DA2739A52B0050E049 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B8EE5B5056AC1D54D707BDE /* Pods-PushFitTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -556,6 +712,7 @@
 		};
 		B1ABB3DC2739A52B0050E049 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1154F461D4D978EE4F63E464 /* Pods-PushFit-PushFitUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -578,6 +735,7 @@
 		};
 		B1ABB3DD2739A52B0050E049 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B89F5C1C2C7C6C076264FC1 /* Pods-PushFit-PushFitUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -638,19 +796,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		B10B794B274715DE0031C980 /* Workouts.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				B10B794C274715DE0031C980 /* Workouts.xcdatamodel */,
-			);
-			currentVersion = B10B794C274715DE0031C980 /* Workouts.xcdatamodel */;
-			path = Workouts.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = B1ABB3A32739A52A0050E049 /* Project object */;
 }

@@ -6,7 +6,8 @@
 //
 
 import UIKit
-import CoreData
+//import CoreData
+import Parse
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +16,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // --- Copy this only
+            
+            let parseConfig = ParseClientConfiguration {
+                    $0.applicationId = "3KgiUq9Ig0Ea3MCsG0Xjj5CcPinPP5DBV7uJs6rg" // <- UPDATE
+                    $0.clientKey = "iGcm6rcJyc5NLrRzq6rRcRYlQai12uJSTh9jIcAH" // <- UPDATE
+                    $0.server = "https://parseapi.back4app.com"
+            }
+            Parse.initialize(with: parseConfig)
+            
+            // --- end copy
+        
         return true
     }
 
@@ -32,7 +45,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
     
-    // MARK: - Core Data stack
+   /* // MARK: - Core Data stack
 
     lazy var persistentContainer: NSPersistentContainer = {
         /*
@@ -41,7 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
          application to it. This property is optional since there are legitimate
          error conditions that could cause the creation of the store to fail.
         */
-        let container = NSPersistentContainer(name: "Workouts")
+        let container = NSPersistentContainer(name: "workoutsDM")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
                 // Replace this implementation with code to handle the error appropriately.
@@ -76,5 +89,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-}
+}*/
 
+}

@@ -8,6 +8,8 @@
 import UIKit
 
 class PickExerciseController: UITableViewController {
+    
+    var exercises = [[String:String]]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,29 +19,74 @@ class PickExerciseController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        //URL
+        let url = URL(string: "https://exercisedb.p.rapidapi.com/exercises")!
+        
+        //Request & Headers
+        var request = URLRequest(url: url, cachePolicy: .useProtocolCachePolicy, timeoutInterval: 10)
+        let header = ["x-rapidapi-host": "exercisedb.p.rapidapi.com",
+                       "x-rapidapi-key": "b7818d6a0fmsh33b0ed1193cbac7p15ae67jsne5b4c40aac6a"]
+        request.allHTTPHeaderFields = header
+        
+        //Request Type
+        request.httpMethod = "GET"
+        
+        //URLSession
+        let session = URLSession(configuration: .default, delegate: nil, delegateQueue: OperationQueue.main)
+        
+        //Data Task
+        let task = session.dataTask(with: request) { data, response, error in
+            
+            // This will run when the network request returns
+            if let error = error {
+                   print(error.localizedDescription)
+            } else if let data = data {
+                   let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [[String:String]]
+                print("\n Inside of get. \n ")
+                //print(dataDictionary)
+                self.exercises = dataDictionary
+                print(self.exercises[0]["name"]!)
+                self.tableView.reloadData()
+        }
+            
+        }
+        task.resume()
     }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return exercises.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ExerciseCell") as! ExerciseCell
 
         // Configure the cell...
-
+        
+        let exercise = exercises[indexPath.row]
+       
+        let exerciseName = exercise["name"]!
+        //print(exerciseName)
+        let exerciseBodyPart = exercise["target"]!
+        //print(exerciseBodyPart)
+        
+        cell.nameLabel.text = exerciseName
+        cell.partLabel.text = exerciseBodyPart
+        
+        
+        
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

@@ -1,0 +1,6 @@
+framework module Pods_PushFitTests {
+  umbrella header "Pods-PushFitTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
