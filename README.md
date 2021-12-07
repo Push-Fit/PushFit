@@ -169,3 +169,4 @@ Push Fit is an app that provides a simple and clean interface to build your work
 <img src= https://i.imgur.com/FG9tsZu.gif width=600>
 
 ### Home Screen Is Populated From Exercise Selection/App Icon Added
+<img src= https://i.imgur.com/NMOehDA.gif width = 600>
