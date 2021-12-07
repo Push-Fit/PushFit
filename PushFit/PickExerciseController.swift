@@ -47,11 +47,14 @@ class PickExerciseController: UITableViewController {
                 //print(dataDictionary)
                 self.exercises = dataDictionary
                 print(self.exercises[0]["name"]!)
+                print(self.exercises[0])
                 self.tableView.reloadData()
         }
             
         }
         task.resume()
+        
+        
     }
 
     // MARK: - Table view data source
@@ -81,7 +84,7 @@ class PickExerciseController: UITableViewController {
         
         cell.nameLabel.text = exerciseName
         cell.partLabel.text = exerciseBodyPart
-        
+        cell.targetView.image = UIImage(named: "bicep")
         
         
         return cell
@@ -123,14 +126,32 @@ class PickExerciseController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
+        
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPath(for: cell)!
+        let exercise = exercises[indexPath.row]
+        let sets = ["Sets":"2"]
+        if let tbc = self.tabBarController as? MainTabController {
+             // do something with tbc.myInformation
+            tbc.pubExercises.append(exercise)
+            tbc.pubExercises[0]["Sets"] = "2"
+         }
+        let addController = segue.destination as! AddExerciseController
+        
+        
+        
+        
+        
+        
+        
     }
-    */
+    
 
 }

@@ -17,6 +17,11 @@ class ExerciseCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        targetView.layer.borderWidth = 1
+        targetView.layer.masksToBounds = false
+        targetView.layer.borderColor = UIColor.black.cgColor
+        targetView.layer.cornerRadius = targetView.frame.height/2
+        targetView.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -25,6 +25,23 @@ class HomeController: UITableViewController {
         //fetchPeople()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        if let tbc = self.tabBarController as? MainTabController {
+            if(tbc.pubExercises.isEmpty == false){
+                print("\n Back from pick. \n")
+                print(tbc.check)
+                print(tbc.pubExercises)
+                
+            }
+        }
+        self.tableView.reloadData()
+    }
+    
+
+    @IBAction func unwind(_ unwindSegue: UIStoryboardSegue) {
+        let sourceViewController = unwindSegue.source
+        // Use data from the view controller which initiated the unwind segue
+    }
     /*func fetchPeople(){
         
         //fetch data from CoreData
@@ -51,15 +68,34 @@ class HomeController: UITableViewController {
         return 0
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCell") as! HomeCell
 
         // Configure the cell...
-
+        if let tbc = self.tabBarController as? MainTabController {
+             // do something with tbc.myInformation
+            let exercise = tbc.pubExercises[indexPath.row]
+           
+            let exerciseName = exercise["name"]!
+            //print(exerciseName)
+            //let exerciseBodyPart = exercise["target"]!
+            //print(exerciseBodyPart)
+            
+            let exerciseSets = exercise["Sets"]!
+            let exerciseReps = exercise["Reps"]
+            
+            cell.nameLabel.text = exerciseName
+            cell.setsLabel.text = exerciseSets
+            cell.repsLabel.text = exerciseReps
+            
+         }
+        
+        
+        
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
