@@ -33,12 +33,12 @@ Push Fit is an app that provides a simple and clean interface to build your work
 
 * User can see a list of all available exercises 
 * User can add/delete exercise to the list
-* User can save their routine
-* User can tap on cell to get a description on a excerise
 
 **Optional Nice-to-have Stories**
 
 * User can generate a random routine
+* User can save their routine
+* User can tap on cell to get a description on a excerise
 
 ### 2. Screen Archetypes
 
@@ -162,3 +162,8 @@ Push Fit is an app that provides a simple and clean interface to build your work
 
 ### Populating ExercisePicker TableView W/ API Call
 <img src= https://i.imgur.com/fwdGeYU.gif width=600>
+
+### Sprint 4
+
+### UI Adjustments & Passing Info Between Controllers Through Add
+<img src= https://i.imgur.com/FG9tsZu.gif width=600>
