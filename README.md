@@ -104,7 +104,6 @@ Push Fit is an app that provides a simple and clean interface to build your work
       - (Read/Get) Query excersise visual
       - (Delete) Delete workout 
       - (Delete) Delete excercise
-      - (Create/POST) saving workout
    
    - Saved Workout Screen
        - (Read/Get) Query Workout name
@@ -114,7 +113,6 @@ Push Fit is an app that provides a simple and clean interface to build your work
   - Description Screen
        - (Read/Get) Query exercise name
        - (Read/Get) Query exercise visual
-       - (Read/Get) Query exercise summary
    
    - Creation Screen
        - (Create/Post) Make workout (add reps and sets too)
@@ -122,6 +120,9 @@ Push Fit is an app that provides a simple and clean interface to build your work
        - (Read/Get) Query workout visual
 
 ### [Optional:] Existing API Endpoints
+- (Create/POST) saving workout
+- (Read/Get) Query exercise summary
+
 
 ##### ExerciseDB API
 - Base URL - [https://exercisedb.p.rapidapi.com/exercises](https://exercisedb.p.rapidapi.com/exercises)
