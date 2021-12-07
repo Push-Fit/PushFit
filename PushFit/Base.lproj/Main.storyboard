@@ -307,9 +307,11 @@
                                         <constraint firstAttribute="trailingMargin" secondItem="Wha-ZR-q5f" secondAttribute="trailing" constant="72" id="6l9-K1-GAJ"/>
                                         <constraint firstItem="luO-AD-H0P" firstAttribute="leading" secondItem="Xh7-oi-qew" secondAttribute="trailing" constant="8" id="8DL-0V-n24"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="Wha-ZR-q5f" secondAttribute="bottom" constant="5" id="8NP-qP-7Bx"/>
+                                        <constraint firstItem="Wha-ZR-q5f" firstAttribute="top" secondItem="XU2-q8-o8c" secondAttribute="top" id="TXt-Sg-dB4"/>
                                         <constraint firstItem="Wha-ZR-q5f" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XU2-q8-o8c" secondAttribute="trailing" constant="15" id="TYM-Z1-1RI"/>
                                         <constraint firstItem="XU2-q8-o8c" firstAttribute="leading" secondItem="Xh7-oi-qew" secondAttribute="trailing" constant="8" id="ZVY-sf-zzw"/>
                                         <constraint firstItem="Xh7-oi-qew" firstAttribute="leading" secondItem="ibQ-Mb-3ox" secondAttribute="leading" constant="10" id="gKB-gl-3gU"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Wha-ZR-q5f" secondAttribute="bottom" constant="5" id="lnS-lK-d6d"/>
                                         <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="luO-AD-H0P" secondAttribute="trailing" constant="219" id="r2Q-8A-zus"/>
                                         <constraint firstItem="XU2-q8-o8c" firstAttribute="top" secondItem="luO-AD-H0P" secondAttribute="bottom" constant="32" id="zB9-1w-1GV"/>
                                     </constraints>

@@ -11,6 +11,7 @@ class HomeController: UITableViewController {
 
    /* let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     var workouts : [Workouts]?*/
+    var index = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,12 +61,19 @@ class HomeController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        
+        if let tbc = self.tabBarController as? MainTabController {
+            
+            index = tbc.pubExercises.count
+            
+        }
+        
+        return index
     }
 
     
@@ -82,12 +90,13 @@ class HomeController: UITableViewController {
             //let exerciseBodyPart = exercise["target"]!
             //print(exerciseBodyPart)
             
-            let exerciseSets = exercise["Sets"]!
-            let exerciseReps = exercise["Reps"]
+            //let exerciseSets = exercise["Sets"]!
+            //let exerciseReps = exercise["Reps"]
             
             cell.nameLabel.text = exerciseName
-            cell.setsLabel.text = exerciseSets
-            cell.repsLabel.text = exerciseReps
+            cell.exerciseView.image = UIImage(named: "ls")
+            //cell.setsLabel.text = exerciseSets
+            //cell.repsLabel.text = exerciseReps
             
          }
         
