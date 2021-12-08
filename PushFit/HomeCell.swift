@@ -2,7 +2,8 @@
 //  HomeCell.swift
 //  PushFit
 //
-//  Created by Hevert Peralta on 12/5/21.
+//  Group Members: Hevert Peralta, Alejandro Mirando, Felipe Durango
+//  Group 9: Push Fit
 //
 
 import UIKit
