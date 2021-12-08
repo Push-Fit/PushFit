@@ -2,7 +2,8 @@
 //  HomeController.swift
 //  PushFit
 //
-//  Created by Hevert Peralta on 11/18/21.
+//  Group Members: Hevert Peralta, Alejandro Mirando, Felipe Durango
+//  Group 9: Push Fit
 //
 
 import UIKit
