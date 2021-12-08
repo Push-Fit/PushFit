@@ -2,7 +2,8 @@
 //  MainTabController.swift
 //  PushFit
 //
-//  Created by Hevert Peralta on 12/5/21.
+//  Group Members: Hevert Peralta, Alejandro Mirando, Felipe Durango
+//  Group 9: Push Fit
 //
 
 import UIKit
@@ -10,6 +11,8 @@ import UIKit
 class MainTabController: UITabBarController {
     
     var pubExercises = [[String:String]]()
+    var setNum: String = ""
+    var repNum: String = ""
     var check = 0
     
     override func viewDidLoad() {

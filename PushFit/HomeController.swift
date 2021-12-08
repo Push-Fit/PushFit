@@ -9,9 +9,9 @@ import UIKit
 
 class HomeController: UITableViewController {
 
-   /* let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-    var workouts : [Workouts]?*/
     var index = 0
+    
+    var sr = [[String:String]]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,8 +30,16 @@ class HomeController: UITableViewController {
         if let tbc = self.tabBarController as? MainTabController {
             if(tbc.pubExercises.isEmpty == false){
                 print("\n Back from pick. \n")
-                print(tbc.check)
-                print(tbc.pubExercises)
+                print(tbc.pubExercises.count)
+                let count = tbc.pubExercises.count-1
+                for i in 0...count{
+                    print("Loop Index \(i)\n")
+                    print(tbc.pubExercises[i])
+                    print("\n")
+            
+                }
+                print("Whole Array: \(tbc.pubExercises)\n")
+                print("Sets: \(tbc.setNum) Reps: \(tbc.repNum)\n");
                 
             }
         }
@@ -40,8 +48,12 @@ class HomeController: UITableViewController {
     
 
     @IBAction func unwind(_ unwindSegue: UIStoryboardSegue) {
-        let sourceViewController = unwindSegue.source
+        let sourceViewController = unwindSegue.source as? AddExerciseController
         // Use data from the view controller which initiated the unwind segue
+        let i = sourceViewController!.setsAndReps.count-1
+        let src = sourceViewController?.setsAndReps
+        sr.append(src![i])
+        
     }
     /*func fetchPeople(){
         
@@ -86,17 +98,12 @@ class HomeController: UITableViewController {
             let exercise = tbc.pubExercises[indexPath.row]
            
             let exerciseName = exercise["name"]!
-            //print(exerciseName)
-            //let exerciseBodyPart = exercise["target"]!
-            //print(exerciseBodyPart)
             
-            //let exerciseSets = exercise["Sets"]!
-            //let exerciseReps = exercise["Reps"]
             
             cell.nameLabel.text = exerciseName
             cell.exerciseView.image = UIImage(named: "ls")
-            //cell.setsLabel.text = exerciseSets
-            //cell.repsLabel.text = exerciseReps
+            cell.setsLabel.text = sr[indexPath.row]["Sets"]
+            cell.repsLabel.text = sr[indexPath.row]["Reps"]
             
          }
         

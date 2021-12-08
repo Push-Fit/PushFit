@@ -43,11 +43,11 @@ class PickExerciseController: UITableViewController {
                    print(error.localizedDescription)
             } else if let data = data {
                    let dataDictionary = try! JSONSerialization.jsonObject(with: data, options: []) as! [[String:String]]
-                print("\n Inside of get. \n ")
+                //print("\n Inside of get. \n ")
                 //print(dataDictionary)
                 self.exercises = dataDictionary
-                print(self.exercises[0]["name"]!)
-                print(self.exercises[0])
+                //print(self.exercises[0]["name"]!)
+                //print(self.exercises[0])
                 self.tableView.reloadData()
         }
             
@@ -78,9 +78,9 @@ class PickExerciseController: UITableViewController {
         let exercise = exercises[indexPath.row]
        
         let exerciseName = exercise["name"]!
-        //print(exerciseName)
+        
         let exerciseBodyPart = exercise["target"]!
-        //print(exerciseBodyPart)
+        
         
         cell.nameLabel.text = exerciseName
         cell.partLabel.text = exerciseBodyPart
@@ -137,21 +137,12 @@ class PickExerciseController: UITableViewController {
         let cell = sender as! UITableViewCell
         let indexPath = tableView.indexPath(for: cell)!
         let exercise = exercises[indexPath.row]
-        let sets = ["Sets":"2"]
+        
         if let tbc = self.tabBarController as? MainTabController {
              // do something with tbc.myInformation
             tbc.pubExercises.append(exercise)
-            tbc.pubExercises[0]["Sets"] = "2"
          }
         let addController = segue.destination as! AddExerciseController
-        
-        
-        
-        
-        
-        
-        
     }
-    
 
 }

@@ -13,6 +13,11 @@ class AddExerciseController: UIViewController {
     @IBOutlet weak var repsTextField: UITextField!
     
     var index : Int = 0
+    var setsAndReps = [[String:String]]()
+    var set: String = ""
+    var rep: String = ""
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,21 +25,19 @@ class AddExerciseController: UIViewController {
     }
     
     @IBAction func addExercise(_ sender: Any) {
-        if let tbc = self.tabBarController as? MainTabController {
-             // do something with tbc.myInformation
-            index = tbc.pubExercises.count-1
-            tbc.check = 1
-            
-            //tbc.pubExercises[0]["Sets": setsTextField.text!]
-            tbc.pubExercises.append(["Reps": repsTextField.text!])
-            
-            
-         }
+        set = setsTextField.text ?? "xx"
+        rep = repsTextField.text ?? "xx"
+        let sr = ["Sets":"\(set) Sets", "Reps":"\(rep) Reps"]
+        setsAndReps.append(sr)
+        
+        
+        
         performSegue(withIdentifier: "unwind", sender: self)
     }
     
     
     @IBAction func cancelAdd(_ sender: Any) {
+        
         if let tbc = self.tabBarController as? MainTabController {
              // do something with tbc.myInformation
             index = tbc.pubExercises.count-1
@@ -52,16 +55,23 @@ class AddExerciseController: UIViewController {
         // Get the new view controller using segue.destination.
         // Pass the selected object to the new view controller.
         
-        if let tbc = self.tabBarController as? MainTabController {
-             // do something with tbc.myInformation
-            index = tbc.pubExercises.count-1
-            tbc.check = 1
-            tbc.pubExercises.append(["Sets": setsTextField.text!])
-            tbc.pubExercises.append(["Reps": repsTextField.text!])
-            
-            
-         }
+        
         let HomeController = segue.destination as! HomeController
+     if let tbc = self.tabBarController as? MainTabController {
+          // do something with tbc.myInformation
+         tbc.setNum = setsTextField.text!
+         tbc.repNum = repsTextField.text!
+         index = tbc.pubExercises.count-1
+         tbc.pubExercises[index]["Sets"] = "\(tbc.setNum)"
+         tbc.pubExercises[index]["Reps"] = "\(tbc.repNum)"
+         print("\naddExercise\nSets: \(tbc.setNum) Reps: \(tbc.repNum)")
+         tbc.check = 1
+         
+         //tbc.pubExercises[0]["Sets": setsTextField.text!]
+         //tbc.pubExercises.append(["Reps": repsTextField.text!])
+         
+         
+      }
     }*/
     
 
