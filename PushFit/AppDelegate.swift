@@ -27,6 +27,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             Parse.initialize(with: parseConfig)
             
             // --- end copy
+        if #available(iOS 15, *) {
+            let appearance = UINavigationBarAppearance()
+            appearance.configureWithTransparentBackground()
+            appearance.backgroundColor = UIColor(red: 62/255.0, green: 73/255.0, blue: 83/255.0, alpha: 1.0)
+            UINavigationBar.appearance().standardAppearance = appearance
+            UINavigationBar.appearance().scrollEdgeAppearance = appearance
+            let tab = UITabBarAppearance()
+            tab.configureWithTransparentBackground()
+            tab.backgroundColor = UIColor(red: 62/255.0, green: 73/255.0, blue: 83/255.0, alpha: 1.0)
+            UITabBar.appearance().standardAppearance = tab
+            UITabBar.appearance().scrollEdgeAppearance = tab
+        }
         
         return true
     }
